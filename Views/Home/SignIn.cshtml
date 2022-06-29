@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignIn</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="col-md-12 row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <div class="">
+                        <h4>SIGN IN</h4>
+                    </div>
+                    <div class="text-right">
+                        <a href="/home/EomployeeRegistration" class="btn btn-sm btn-primary" style="margin-top: -6%;">SignUp</a>
+                    </div>
+                </div>
+              
+                <div class="card-body">
+                    <div class="col-md-12 row">
+                        <div class="col-md-4">
+                            <lable>User Id</lable>
+                            <input type="text" id="txt_UserId" class="form-control form-control-sm" maxlength="100" />
+                        </div>
+                        <div class="col-md-4">
+                            <lable>Password</lable>
+                            <input type="password" id="txt_Password" class="form-control form-control-sm" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <button class="btn btn-sm btn-success" onclick="InsertSignInData()">SignIn</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+
+    </div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/UserData.js"></script>
+    
+</body>
+</html>

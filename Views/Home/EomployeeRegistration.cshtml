@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="col-md-12 row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <div class="">
+                        <h4>Registration Form</h4>
+                    </div>
+                    <div class="text-right">
+                        <a href="/home/SignIn" class="btn btn-sm btn-primary" style="margin-top: -6%;">SignIn</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="col-md-12 row">
+                        <div class="col-md-4">
+                            <lable>Name</lable>
+                            <input type="text" id="txt_name" class="form-control form-control-sm" maxlength="100" />
+                        </div>
+                        <div class="col-md-4">
+                            <lable>Email</lable>
+                            <input type="text" id="txt_email" class="form-control form-control-sm" maxlength="100" />
+                        </div>
+                        <div class="col-md-4">
+                            <lable>Password</lable>
+                            <input type="text" id="txt_Password" class="form-control form-control-sm" maxlength="100" />
+                        </div>
+                        <div class="col-md-4">
+                            <lable>Mobile Number</lable>
+                            <input type="number" id="txt_Mobilenumber" class="form-control form-control-sm" maxlength="10" />
+                        </div>
+                        <div class="col-md-4">
+                            <lable>Address</lable>
+                            <textarea id="txt_Address" class="form-control form-control-sm"></textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <lable>PinCode</lable>
+                            <input type="number" id="txt_PinCode" class="form-control form-control-sm" maxlength="6" />
+                        </div>
+                        <div class="col-md-4">
+                            <lable>Gender</lable>
+                            <input type="radio" value="M" name="radiogender" /><span>Male</span>
+                            <input type="radio" value="F" name="radiogender" /><span>Female</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <button class="btn btn-sm btn-success" onclick="InsertData()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/UserData.js"></script>
+   
+</body>
+</html>
